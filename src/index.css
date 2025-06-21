@@ -1,0 +1,219 @@
+@font-face {
+  font-family: 'Moderat';
+  src: url('/fonts/Moderat Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Moderat';
+  src: url('/fonts/Moderat-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Moderat';
+  src: url('/fonts/Moderat Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Moderat';
+  src: url('/fonts/Moderat Light Italic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Moderat';
+  src: url('/fonts/Moderat Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Moderat';
+  src: url('/fonts/Moderat Regular Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Moderat';
+  src: url('/fonts/Moderat Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Moderat';
+  src: url('/fonts/Moderat Medium Italic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Moderat';
+  src: url('/fonts/Moderat Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Moderat';
+  src: url('/fonts/Moderat Bold Italic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Moderat';
+  src: url('/fonts/Moderat Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Moderat';
+  src: url('/fonts/Moderat Black Italic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Moderat Mono';
+  src: url('/fonts/Moderat Mono Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Moderat Mono';
+  src: url('/fonts/Moderat Mono Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Moderat Mono';
+  src: url('/fonts/Moderat Mono Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@import "tailwindcss";
+
+:root {
+  font-family: 'Moderat', 'Moderat Mono', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+html, body, #root {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+input::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+input::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+input::-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+input:-ms-input-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.h1-letter {
+  user-select: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+}
+.gsap-rebus-img, .media img {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+span[style*='position: absolute'][style*='right: 0.5em'][style*='font-size: 0.15em'] {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+::selection {
+  background: transparent;
+}
+
+input[type="email"] {
+  font-family: 'Moderat Mono', monospace !important;
+}
+input[type="email"]::placeholder,
+input[type="email"]::-webkit-input-placeholder,
+input[type="email"]::-moz-placeholder,
+input[type="email"]:-ms-input-placeholder {
+  font-family: 'Moderat Mono', monospace !important;
+  color: #fff;
+  opacity: 1;
+  text-align: center;
+}
